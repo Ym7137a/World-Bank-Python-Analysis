@@ -6,9 +6,6 @@ output: html_document
 urlcolor: "blue"
 params:
   solutions: TRUE
----
-
-© 2023 David Gerard, not to be posted online, or uploaded to an AI.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo       = params$solutions, 
@@ -17,21 +14,6 @@ knitr::opts_chunk$set(echo       = params$solutions,
                       fig.height = 3, 
                       fig.width  = 5)
 ```
-
-# Instructions
-
-- Write your solutions in this starter file. You should modify the 
-  "author" field in the YAML header.
-- Only commit R Markdown and HTML files (no PDF files). Make sure
-  you have knitted to HTML for your final submission.
-- **Make sure to commit each time you answer a question.**
-- Only include the necessary code, not any extraneous code, to answer the 
-  questions.
-- Use only Python code (no R code). 
-- Use only Python functions from numpy, pandas, and seaborn (and functions that come with base Python).
-- Do not change the path of any files.
-- Learning objectives:
-    - Numpy, Pandas, Seaborn
 
 # World Bank Data
 
@@ -72,7 +54,7 @@ repositories of the World Bank.
   population, which counts all residents regardless of legal status or 
   citizenship. The values shown are midyear estimates.
   
-1. (1 pt) Use relative paths to load these data frames into Python.
+1. Use relative paths to load these data frames into Python.
 
 ```{python}
 
@@ -130,7 +112,7 @@ fert_tidy = make_tidy(fert, 'Fertility')
 print(fert_tidy)
 ```
     
-3. (2 pts) Combine these data frames so that we have the fertility rate, population,
+3.  Combine these data frames so that we have the fertility rate, population,
    life expectancy, and the region for each country in each year in a single
    data frame. The resulting data frame should look like this
    
@@ -156,7 +138,7 @@ wb_df.info()
 
 ```
     
-4. (2 pts) Make a scatterplot of fertility rate vs life expectancy, color-coding by region. Do this for the years 1960, 1970, 1980, 1990, 2000, and 2010. Facet by these years. Make your plot aesthetically pleasing.  Your final plot should look like this:
+4.  Make a scatterplot of fertility rate vs life expectancy, color-coding by region. Do this for the years 1960, 1970, 1980, 1990, 2000, and 2010. Facet by these years. Make your plot aesthetically pleasing.  Your final plot should look like this:
 
 ```{python}
 import seaborn as sns
@@ -174,7 +156,7 @@ plt.show()
 
 ```
     
-5. (2 pts) Calculate the total population for each region for each year. Exclude 2018. 
+5.  Calculate the total population for each region for each year. Exclude 2018. 
    Make a line plot of year versus total population, color-coding by region.
    Your final plot should look like this:
    
@@ -204,7 +186,7 @@ plt.show()
 
 ```
     
-6. (2 pts) Make a bar plot of population vs region for the year 2017. Your final  plot should look like this:
+6. Make a bar plot of population vs region for the year 2017. Your final  plot should look like this:
 ```{python}
 import matplotlib.pyplot as plt
 import seaborn as sns
