@@ -27,12 +27,11 @@ The cleaned and tidied data frames were then merged to create a comprehensive da
 1. Scatterplot of Fertility Rate vs. Life Expectancy: A scatterplot was created to visualize the relationship between fertility rate and life expectancy, color-coded by region, for the years 1960, 1970, 1980, 1990, 2000, and 2010.
 <img src="Visualization/3.png" width="500">
 
-
 2. Line Plot of Total Population by Region Over Time: A line plot was generated to display the total population for each region over the years 1960 to 2010, excluding 2018. Each region is represented by a different color.
-<img src="Visualization/4.png" width="500">
+<img src="Visualization/5.png" width="500">
 
 3. Bar Plot of Population by Region for 2017: A bar plot was created to illustrate the population distribution across different regions for the year 2017.
-<img src="Visualization/5.png" width="500">
+<img src="Visualization/4.png" width="500">
 
 **Conclusion:**
 
